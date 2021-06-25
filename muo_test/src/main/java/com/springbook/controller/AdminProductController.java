@@ -137,17 +137,11 @@ public class AdminProductController {
 			vo.setIt_img1(fileName1);
 			vo.setIt_img2(fileName2);
 			vo.setIt_img3(fileName3);
-			
-
-			System.out.println(fileName1);
-			System.out.println(fileName2);
-			System.out.println(fileName3);
-			System.out.println("vo:"+vo);
-			
 		}
 		
 		
 		service.modify(vo);
+		
 		
 		return "redirect:/admin/product/list";
 	}
